@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+  <title>MCA Student Portfolio</title>
+  <meta name="description" content="Portfolio website of an MCA student showcasing projects, skills, and contact information." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/images/profile.png" />
+  <meta name="color-scheme" content="light dark">
+</head>
+<body>
+  <div class="availability-banner" role="note" aria-live="polite">
+    <div id="availability-root" class="container"></div>
+  </div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#">ᴄʜɪʀᴀɢ'ꜱ ᴘᴏʀᴛꜰᴏʟɪᴏ
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="theme-toggle" aria-label="Toggle color theme">🌗</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1>Hello, I'm <span class="accent">chirag chaudhari</span></h1>
+          <p class="subtitle">MCA student passionate about building scalable web apps and solving real-world problems.</p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="#contact">Contact Me</a>
+            <a class="btn" href="https://www.linkedin.com/in/your-username" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <div class="photo-3d" id="photo3d">
+            <div id="particles" class="particles" aria-hidden="true"></div>
+            <div class="fire-ring" id="fireRing" aria-hidden="true"></div>
+            <div class="photo-card" id="photoCard">
+              <img src="assets/images/profile.png" alt="Photo of Chirag Chaudhari" width="400" height="400" />
+              <div class="glare" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <h2 class="gradient-text">About Me</h2>
+      <p>
+        I’m Chirag Chaudhari, pursuing my Master of Computer Applications (MCA) at Jayawantrao Sawant College of Engineering, Pune <strong></strong>(JSCOE).
+        Passionate about technology and problem-solving, I love building interactive web applications, exploring modern tools, and continuously learning new skills.
+        🎯 My ultimate goal is to crack a top tech company, where I can showcase my skills, work on challenging projects, and contribute to impactful innovations.
+        Outside of academics, I enjoy traveling, exploring new experiences, and learning things that keep me inspired and creative.
+      </p>
+      <ul class="quick-facts">
+      <li><strong>Interests:</strong>
+        I have a strong interest in <span style="color:#cc5e2e; font-weight:bold;">Java programming</span> and enjoy working with <span style="color:#7aa4ff; font-weight:bold;">Spring Boot</span> to build scalable applications. I actively practice <span style="color:#45d3c5; font-weight:bold;">Data Structures and Algorithms (DSA)</span> to strengthen my problem-solving skills.
+
+        I’m also passionate about exploring Artificial Intelligence and Machine Learning, learning how these technologies are shaping the future. Alongside this, I’m deeply engaged in Web Development, where I like designing and developing interactive websites.
+        
+        Currently, I’m working on projects with Spring Boot, which allow me to combine my backend knowledge with practical, real-world applications.</li>
+        
+      </ul>
+    </section>
+
+    <section class="section container" id="skills">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">HTML</span>
+        <span class="chip">CSS3</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">java</span>
+        <span class="chip">Springboot</span>
+        <span class="chip">Python</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Data Structures</span>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <h2></h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Pc buillder</h3>
+          <div class="card-media">
+            <img src="assets/images/pc-builder.jpg" alt="Pc buillder – buy PC components online" loading="lazy" width="1200" height="675" />
+          </div>
+          <p>An e‑commerce platform where users can browse and buy PC components. Built with HTML, CSS, JavaScript, and Bootstrap on the frontend, with a PHP backend and MySQL database.</p>
+          <div class="card-actions">
+            <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+            <a class="btn small" href="#" target="_blank" rel="noreferrer">Code</a>
+            <button class="btn small like-btn" type="button" data-like-id="pc-builder" aria-pressed="false" title="Like this project">
+              
+            </button>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Interactive To-Do List Web App</h3>
+          <div class="card-media">
+            <img src="project2logo.png" alt="Pc buillder – buy PC components online" loading="lazy" width="1200" height="675" />
+          </div>
+          <p>Developed a full-stack To-Do List using Spring Boot backend with controllers, services, and repositories for CRUD operations and database integration (MySQL/H2/SQLite). Front-end built with HTML, CSS, Thymeleaf, and optional JavaScript/AJAX for interactivity. Optional user authentication implemented using Spring Security.
+            /nFeatures:
+Add new tasks
+
+ Edit or delete tasks
+  Mark tasks as completed
+ Display tasks in a list
+  Save tasks in a database
+
+          </p>
+          <div class="card-actions">
+            <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+            <a class="btn small" href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>Brief description of your project. Mention tools, libraries, and performance.</p>
+          <div class="card-actions">
+            <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+            <a class="btn small" href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="education">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>MCA, JSPM Jaywantrao Sawant College Of Engineering, Pune</h3>
+            <p>2025– 2027</p>
+            <p>Relevant coursework: Python, Java, Data Structures, Web Technologies, DBMS, Cloud Computing.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>BSc computer Science KKWagh Arts, Commerce & Computer Science College, Nashik</h3>
+            <p> 2022– 2025</p>
+            <p> “I have learned C, C++, Java, Operating Systems, and RDBMS, and regularly engage in extra activities and practice to strengthen my understanding of these subjects.”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <h2>Contact</h2>
+      <p>Want to collaborate or have an opportunity? Reach out:</p>
+      <ul class="contact-list">
+        <li><a href="mailto:you@example.com">chaudharichirag965@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a></li>
+      </ul>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="fullName">Full name</label>
+            <input type="text" id="fullName" name="name" placeholder="Your full name" required />
+            <span class="error" data-for="fullName"></span>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <span class="error" data-for="email"></span>
+          </div>
+          <div class="form-field">
+            <label for="phone">7350334048</label>
+            <input type="tel" id="phone" name="contactNumber" placeholder="+1234567890" pattern="^[0-9+\-()\s]{7,}$" />
+            <span class="error" data-for="phone"></span>
+          </div>
+          <div class="form-field form-span-2">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+            <span class="error" data-for="message"></span>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send Message</button>
+          <span id="contactStatus" role="status" aria-live="polite" class="status"></span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name · MCA Student</p>
+    </div>
+  </footer>
+
+  <!-- Animation libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-6c6h7KJ0Hkq2Ck/7mV+7VYvEw+zF9lG4w1h4qQ9Q3i9S3y7s0jvB6c3r8oR4hQ0a3Vt0YzX0QWcUQw8Q4x1G9w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-6y/2gk6tT8s5Qk6Ih2bX7oW3+7qg8HkS8o7Xj0QHqK8m8S3eZcF+f0mEVeK7mS9g8i9d2Q1Kc6uH9fJH5G9w2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-98NXB4Q4X4m2eQ0YkR6QJ5GmQb6m2o3xv1yZQ7t7q3hZ3p7d8m9nYvHfJ+JbC9+v4uKk7w3i3kG8l1XQ2G6M7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- React via CDN -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <!-- React component file -->
+  <script src="assets/js/AvailabilityBanner.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
